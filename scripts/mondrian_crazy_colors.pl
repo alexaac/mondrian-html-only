@@ -1,10 +1,16 @@
 use strict;
 use warnings;
 
+use FindBin;
+
+# What happens when you use bgcolor '11/8/c25' or '9/10/gap'
+# Explanation: http://scrappy-do.blogspot.com/2004/08/little-rant-about-microsoft-internet.html
+
+
 my ( $width, $height ) = ( '1229px', '770px' );
 my ( $padding_top, $padding_right, $padding_bottom, $padding_left ) = ( '17px', '19px', '17px', '18px' );
 
-my $filename = 'mondrian_crazy_colors.html';
+my $filename = "$FindBin::Bin/../public/mondrian_crazy_colors.html";
 
 my @columns_widths = ( 93, 9, 39, 9, 92, 9, 65, 9, 65, 9, 92, 9, 92, 9, 92, 9, 92, 9, 65, 9, 65, 9, 92, 9, 39, 9, 92 );
 my $grid_template_columns = join "px ", @columns_widths;

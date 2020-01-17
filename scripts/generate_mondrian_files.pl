@@ -2,6 +2,8 @@
 use strict;
 use warnings;
 
+use FindBin;
+
 # Generate mondrian.html, mondrian.css, mondrian_html_only.html files
 
 my ( $width, $height ) = ( '1229px', '770px' );
@@ -156,7 +158,7 @@ sub generate_grid_files() {
   my $grid_template_rows = join "px ", @rows_widths;
   $grid_template_rows .= "px";
 
-  my $filename = 'mondrian.html';
+  my $filename = "$FindBin::Bin/../public/mondrian.html";
   open(my $fh, '>', $filename) or die "Can't open '$filename' $!";
 
   my $html_content = <<'END_MESSAGE';
@@ -189,7 +191,7 @@ END_MESSAGE
   print $fh $html_content;
   close $fh;
 
-  $filename = 'mondrian.css';
+  $filename = "$FindBin::Bin/../public/mondrian.css";
   open($fh, '>', $filename) or die "Can't open '$filename' $!";
 
   my $css_content = <<'END_MESSAGE';
@@ -242,7 +244,7 @@ END_MESSAGE
 
 sub generate_html_only_files() {
   
-  my $filename = 'mondrian_html_only.html';
+  my $filename = "$FindBin::Bin/../public/mondrian_html_only.html";
   open(my $fh, '>', $filename) or die "Can't open '$filename' $!";
 
   my $html_content = <<'END_MESSAGE';

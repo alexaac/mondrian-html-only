@@ -2,7 +2,9 @@
 use strict;
 use warnings;
 
-my $filename = 'grid_guides.html';
+use FindBin;
+
+my $filename = "$FindBin::Bin/../public/grid_guides.html";
 
 my ( $width, $height ) = ( '1229px', '770px' );
 my ( $padding_top, $padding_right, $padding_bottom, $padding_left ) = ( '17px', '19px', '17px', '18px' );
