@@ -4,4 +4,4 @@ Generate [ **Mondrian** ](https://en.wikipedia.org/wiki/Piet_Mondrian)
 
 Then generate the same page using only HTML5.
 
-Other mondrian examples: [Surreal Art Piet Mondrian Abstract Trees Painting](https://foxshakedowndish.com/21-inspiring-mondrian-famous-paintings-photo/){:target="_blank"}
+Other mondrian examples: <a href="https://foxshakedowndish.com/21-inspiring-mondrian-famous-paintings-photo/" target="_blank">Surreal Art Piet Mondrian Abstract Trees Painting</a>
